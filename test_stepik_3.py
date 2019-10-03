@@ -13,4 +13,9 @@ from selenium.webdriver.support.ui import WebDriverWait
 driver = WebDriver(executable_path='C:\Python33\chromedriver_win32\chromedriver')
 
 
-def test_
+
+
+# подставляем переменные в текст ошибки с помощью f и {}
+def test_input_text(expected_result, actual_result):
+    assert expected_result == actual_result, f"expected {expected_result}, got {actual_result}"
+
