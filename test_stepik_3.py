@@ -19,3 +19,13 @@ driver = WebDriver(executable_path='C:\Python33\chromedriver_win32\chromedriver'
 def test_input_text(expected_result, actual_result):
     assert expected_result == actual_result, f"expected {expected_result}, got {actual_result}"
 
+
+
+
+# s = 'My Name is Julia'
+#
+# if 'Name' in s:
+#     print('Substring found')
+def test_substring(full_string, substring):
+    assert substring in full_string, f"expected '{substring}' to be substring of '{full_string}'"
+
